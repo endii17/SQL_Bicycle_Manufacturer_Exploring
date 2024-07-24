@@ -1,4 +1,4 @@
-# SQL_Bicycle-Manufacturer-Dataset
+# [SQL] Bicycle Manufacturer Exploring On AdventureWorks Dataset
 
 ## Table of Contents:
 1. [Introduction](#clean_data)
