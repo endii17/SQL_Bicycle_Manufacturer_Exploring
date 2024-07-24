@@ -1,12 +1,12 @@
 # [SQL] Bicycle Manufacturer Exploring On AdventureWorks Dataset
 
 ## Table of Contents:
-1. [Introduction](#clean_data)
-2. [Goals](#clean_data)
-3. [Import raw data](#cau3)
-4. [Read and explain dataset](#cau4)
-5. [Exploring the Dataset](#cau5)
-6. [Conclusions](#cau6)
+1. [Introduction]
+2. [Goals]
+3. [Import raw data]
+4. [Read and explain dataset]
+5. [Exploring the Dataset]
+6. [Conclusions]
 
 
 ## 1. Introduction
