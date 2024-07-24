@@ -10,10 +10,17 @@
 
 
 ## 1. Introduction
+- The AdventureWorks dataset is stored in a public Google BigQuery dataset. This dataset contains information about online transaction processing scenarios for a fictitious bicycle manufacturer (Adventure Works Cycles). Scenarios include Manufacturing, Sales, Purchasing, Product Management, Contact Management, and Human Resources.
 
+- Based on the AdventureWorks dataset, the author perform queries to analyze data about 3 departments: Sales, Production and Purchasing
+
+- To query and work with this dataset, the author uses the Google BigQuery tool to write and execute SQL queries.
 
 ## 2. Goals
-
+- Overview of sales activity
+- Retention Rate of Customers by Co-hort analysis
+- Stock analysis
+- Orders analysis
 
 ## 3. Import raw data
 The AdventureWorks dataset is stored in a public Google BigQuery dataset. To access the dataset, follow these steps:
@@ -398,4 +405,6 @@ WHERE yr = 2014
 |   1 |  2014 |          224 | 3873579.0123000029 |
 
 # 6. Conclusions
-
+- This is the author's opportunity to learn about the sale, production and purchasing field through this dataset
+- In analyzing the AdventureWorks dataset using BigQuery, the author understands sales through the total revenue, YoY growth rate, Retention rate, etc.
+- In conclusion, exploring the AdventureWorks dataset on BigQuery unearthed a wealth of insights critical for strategic decision-making to help the business can optimize operations, enhance customer experiences, and drive revenue.
