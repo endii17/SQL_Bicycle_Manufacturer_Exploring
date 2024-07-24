@@ -16,15 +16,20 @@
 
 
 ## 3. Import raw data
+The AdventureWorks dataset is stored in a public Google BigQuery dataset. To access the dataset, follow these steps:
 
-  
+Log in to your Google Cloud Platform account and create a new project.
+Navigate to the BigQuery console and select your newly created project.
+On Explorer, search "adventureworks2019" and open it.
+
 ## 4. Read and explain dataset
-                                                                                                                                                                    |
+[AdventureWorks Data Dictionary](https://drive.google.com/file/d/1bwwsS3cRJYOg1cvNppc1K_8dQLELN16T/view)                                                                                                                                       |
 
 ## 5. Exploring the Dataset
 In this project, I will write 08 queries in Bigquery for this dataset
 
-### Query 01: 
+### Query 01: Calculate Quantity of items, Sales value & Order quantity by each Subcategory in L12M
+
 - SQL code
   
 ~~~~sql
@@ -71,7 +76,7 @@ ORDER BY period DESC, name
 |   9 | Sep 2013  | Cranksets         |         75 |           13955.85 |          20 |
 |  10 | Sep 2013  | Derailleurs       |         97 |  5972.069999999997 |          23 |
 
-### Query 02: 
+### Query 02: Calculate % YoY growth rate by SubCategory & release top 3 cat with highest grow rate. Can use metric: quantity_item. Round results to 2 decimal
 - SQL code
   
 ~~~~sql
@@ -113,7 +118,7 @@ ORDER BY qty_diff DESC
 |   9 | Mountain Bikes  |       9034 |      2621 |       2.45 |
 |  10 | Jerseys         |      12104 |      4263 |       1.84 |
 
-### Query 03: 
+### Query 03: Ranking Top 3 TeritoryID with biggest Order quantity of every year. If there's TerritoryID with same quantity in a year, do not skip the rank number
 - SQL code
   
 ~~~~sql
@@ -156,7 +161,7 @@ ORDER BY yr DESC
 |   9 | 2012  |              1 |        8537 |    3 |
 |  10 | 2011  |              4 |        3238 |    1 |
 
-### Query 04: 
+### Query 04: Calculate Total Discount Cost belongs to Seasonal Discount for each SubCategory
 - SQL code
   
 ~~~~sql
@@ -182,7 +187,7 @@ GROUP BY year,Name
 |   1 | 2012    | Helmets |    827.64732 |
 |   2 | 2013    | Helmets |     1606.041 |
 
-### Query 05: 
+### Query 05: Retention rate of Customer in 2014 with status of Successfully Shipped (Cohort Analysis)
 - SQL code
   
 ~~~~sql
@@ -251,7 +256,7 @@ ORDER BY month_join, month_diff
 |   9 |            2 | M-2          |             76 |
 |  10 |            2 | M-3          |             71 |
   
-### Query 06: 
+### Query 06: Trend of Stock level & MoM diff % by all product in 2011. If %gr rate is null then 0. Round to 1 decimal
 - SQL code
   
 ~~~~sql
@@ -308,7 +313,7 @@ FROM raw_data_1
 |   9 | Blade           |      11 |    2011 |        3598 |        4670 |  -23.0 |
 |  10 | Blade           |      10 |    2011 |        4670 |        2122 |  120.1 |
 
-### Query 07: 
+### Query 07: Calculate Ratio of Stock / Sales in 2011 by product name, by month
 - SQL code
   
 ~~~~sql
@@ -367,7 +372,7 @@ order by 1 desc, 7 desc
 |  10 |     12 | 2011 |         725 | LL Road Frame - Red, 44        |      12 |      53 |     4.4 |
 
 
-### Query 08: 
+### Query 08: No of order and value at Pending status in 2014
 
 - SQL code
 ~~~~sql
